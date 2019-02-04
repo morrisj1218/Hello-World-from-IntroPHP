@@ -1,0 +1,33 @@
+<!--
+---------------
+Programmer:    Jack Morris
+Course:        ITSE-1306 (Intro to PHP)
+Instructor:    Cesar "Coach" Marrero
+Assignment:    Week 4 Programming Task
+Description:   HTML Form: First name, last name, email, phone number, and DOB
+---------------
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Personal Info Form</title>
+</head>
+<body>
+<div><p>Please complete form with your personal information:</p>
+
+<form action="handle_personInfo.php" method="POST">
+    
+    <p>First Name: <input type="text" name="firstName" size="20" required></p>
+    <p>Last Name: <input type="text" name="lastName" size="20" required></p>
+    <p>E-mail Address: <input type="email" name="email" size="20" required></p>
+    <p>Phone Number: <input type="tel" name="phone" size="13" required></p>
+    <p>Date of Birth: <input type="date" name="dob" size="10" required></p>
+
+    <input type="submit" name="submit" value="Submit Info">
+
+</form>
+</div>    
+</body>
+</html>

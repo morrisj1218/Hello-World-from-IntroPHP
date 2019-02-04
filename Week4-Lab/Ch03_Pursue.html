@@ -1,0 +1,27 @@
+<!--
+---------------
+Programmer:    Jack Morris
+Course:        ITSE-1306 (Intro to PHP)
+Instructor:    Cesar "Coach" Marrero
+Assignment:    Chapter 03 Pursue
+Description:   HTML Form: Price of item(s), sales tax is calculated and added
+---------------
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sales Tax Calculator</title>
+</head>
+<body>
+    <p>Enter the total price of item(s) and click Calculate. <br>
+    Sales tax will be calculated at 8.25% and added to total cost.</p>
+
+    <form action="handle_Ch03_Pursue.php" method="POST">
+        <p>Subtotal of Item(s): <input type="number" step="0.01" name="subtotal" size="10" required></p>
+        
+        <input type="submit" name="submit" value="Calculate">
+    </form>
+</body>
+</html>
